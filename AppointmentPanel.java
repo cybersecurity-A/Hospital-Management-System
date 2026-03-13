@@ -22,7 +22,7 @@ public class AppointmentPanel extends JPanel {
         JButton book = new JButton("Book Appointment");
         JButton view = new JButton("View Appointments");
 
-        refreshDoctors();   // 🔥 important fix
+        refreshDoctors();  
 
         lblCnic.setBounds(30, 40, 120, 25);
         lblDate.setBounds(30, 80, 120, 25);
@@ -69,9 +69,7 @@ public class AppointmentPanel extends JPanel {
                 area.append(a.toString() + "\n");
             }
         });
-    }
-
-    // 🔥 AUTO REFRESH METHOD
+    
     public void refreshDoctors() {
         doctorBox.removeAllItems();
         for(Doctor d : DoctorPanel.service.getAll()) {
@@ -79,3 +77,4 @@ public class AppointmentPanel extends JPanel {
         }
     }
 }
+
