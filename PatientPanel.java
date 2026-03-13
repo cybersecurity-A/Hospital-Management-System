@@ -64,7 +64,7 @@ public class PatientPanel extends JPanel {
                 if(service.addPatient(p)) {
                     JOptionPane.showMessageDialog(this,"Patient Added");
 
-                    // 🔹 Refresh DiseasePanel safely
+            
                     if(diseasePanelRef != null)
                         diseasePanelRef.refreshPatients();
 
@@ -91,8 +91,8 @@ public class PatientPanel extends JPanel {
         });
     }
 
-    // 🔹 Setter for DiseasePanel reference
     public void setDiseasePanel(DiseasePanel disPanel) {
         this.diseasePanelRef = disPanel;
     }
 }
+
