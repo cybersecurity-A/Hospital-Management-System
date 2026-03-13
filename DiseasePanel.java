@@ -57,7 +57,7 @@ public class DiseasePanel extends JPanel {
         refreshPatients();
     }
 
-    // 🔹 Refresh dropdown whenever patient list changes
+Refresh dropdown whenever patient list changes
     public void refreshPatients() {
         patientBox.removeAllItems();
         for(Patient p : PatientPanel.service.getAll()) {
@@ -65,3 +65,4 @@ public class DiseasePanel extends JPanel {
         }
     }
 }
+
